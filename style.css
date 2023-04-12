@@ -156,7 +156,6 @@ body{
 
 /* section2 [about seciton]*/
 .aboutsection{
-    margin-top: 5rem;
     width: 82%;
     display: flex;
     justify-content: space-between;
@@ -198,3 +197,53 @@ body{
 .aboutcontent span{
     color: var(--main-color);
 }
+
+
+/* section 3 [project section] */
+
+.project-section{
+    width: 100%;
+    /* background-color: red; */
+    /* background-color: var(--bg-color); */
+}
+.project-section h1{
+    text-align: center;
+    font-size: 3.2rem;
+    color: var(--text-color);
+}
+.project-section h1 span{
+    color: var(--main-color);
+}
+
+.project-container-grid{
+    display: grid;
+    margin-top: 4rem;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    align-items: center;
+    justify-items: center;
+    row-gap: 1.8rem;
+}
+
+.grid-items{
+    background-color: black;
+    height: 300px;
+    width: 400px;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 2rem var(--main-color);
+    overflow: hidden;
+}
+
+.grid-items img{
+    width: 100%;
+}
+
+/* .grid-items .information-layer{
+    background-color: red;
+    position: absolute;
+    width: 100%;
+
+} */
