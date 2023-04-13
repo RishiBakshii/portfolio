@@ -203,8 +203,6 @@ body{
 
 .project-section{
     width: 100%;
-    /* background-color: red; */
-    /* background-color: var(--bg-color); */
 }
 .project-section h1{
     text-align: center;
@@ -234,16 +232,59 @@ body{
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 2rem var(--main-color);
+    position: relative;
     overflow: hidden;
 }
 
 .grid-items img{
     width: 100%;
+    transition: .4s ease;
 }
 
-/* .grid-items .information-layer{
-    background-color: red;
-    position: absolute;
-    width: 100%;
+.grid-items:hover img{
+    transform: scale(1.1);
+}
 
-} */
+.grid-items:hover .information-layer{
+    transform: translateY(0);
+}
+
+.information-layer{
+    display: flex;
+    color: var(--text-color);
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    flex-direction: column;
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,.1),var(--main-color));
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .4s ease;
+}
+
+.information-layer h4{
+    font-size: 2rem;
+}
+
+.information-layer p{
+    font-size: 1.1rem;
+    margin: .3rem 0 1;
+}
+
+.information-layer a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background: var(--text-color);
+    border-radius: 50%;
+}
+
+.information-layer a i{
+    font-size: 1.4rem;
+    color: var(--second-bg-color);
+}
