@@ -73,13 +73,37 @@ body{
     font-weight: 540;
     transition: .2s;
     color: rgba(255, 255, 255, 0.8);
-    font-family:'Poppins',sans-serif
+    font-family:'Poppins',sans-serif;
+    letter-spacing: .3px;
 }
 
 .navbar .nav-items a:hover{
     color: white;
+    animation: lineanimation;
+}
+@keyframes lineanimation {
+    0%{
+        width: 0rem;
+    }
+
+    100%{
+        width: 98vw;
+    }
 }
 
+.line{
+    background-color: var(--text-color);
+    height: .2rem;
+    position: absolute;
+    top: 0;
+    animation-name: lineanimation;
+    animation-duration: .2s;
+    animation-fill-mode: backwards;
+}
+
+
+
+/* MAIN SECTION */
 .main{
     margin-top: 6rem;
     display: flex;
@@ -346,3 +370,46 @@ body{
     filter: blur(5px);
     transform: scale(1.1);
 }
+
+
+/* SECTION 4 CERTIFICATES SECTION */
+
+.certificates-section{
+    /* background-color: red; */
+    width: 100%;
+}
+
+.certificates-section h1{
+    text-align: center;
+    font-size: 3.2rem;
+    color: var(--text-color);
+}
+
+
+.certificate-container-grid{
+    display: grid;
+    margin-top: 4rem;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    align-items: center;
+    justify-items: center;
+    row-gap: 1.8rem;
+}
+
+.items{
+    width: 39.5vw;
+    height: 62vh;
+    /* border-radius: 2rem; */
+    position: relative;
+    overflow: hidden;
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column; */
+}
+
+.items iframe{
+    width: 100%;
+    height: 100%;
+}
+
+
