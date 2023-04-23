@@ -402,14 +402,22 @@ body{
     /* border-radius: 2rem; */
     position: relative;
     overflow: hidden;
+    transition: .4s;
     /* display: flex;
     justify-content: center;
     flex-direction: column; */
+    box-shadow: 0 0 1rem 0 var(--main-color);
 }
+
+
 
 .items iframe{
     width: 100%;
     height: 100%;
+}
+
+.items:hover{
+    transform: scale(1.0564);
 }
 
 
