@@ -67,28 +67,20 @@ body{
     text-decoration: none;
     margin-left: 6rem;
 }
+
 .navbar .nav-items a{
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     text-decoration: none;
     font-weight: 540;
     transition: .2s;
-    color: rgba(255, 255, 255, 0.8);
-    font-family:'Poppins',sans-serif;
+    color: rgba(255, 255, 255, 0.7);
     letter-spacing: .3px;
 }
 
 .navbar .nav-items a:hover{
     color: white;
-    animation: lineanimation;
-}
-@keyframes lineanimation {
-    0%{
-        width: 0rem;
-    }
-
-    100%{
-        width: 98vw;
-    }
+    font-size: 1.8rem;
+    position: relative;
 }
 
 .line{
@@ -96,11 +88,21 @@ body{
     height: .2rem;
     position: absolute;
     top: 0;
-    animation-name: lineanimation;
-    animation-duration: .2s;
-    animation-fill-mode: backwards;
+    /* animation: line 10s cubic-bezier(0.445, 0.05, 0.55, 0.95) 0s infinite forwards alternate-reverse; */
+    width: 4rem;
+    transition: 4s;
 }
 
+@keyframes line {
+    from{
+        width: 4rem;
+    }
+
+    to{
+        width: 90vw;
+    }
+    
+}
 
 
 /* MAIN SECTION */
@@ -420,4 +422,67 @@ body{
     transform: scale(1.0564);
 }
 
+/* CONTACT SECTION */
 
+.contact-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-section h2{
+    font-size: 3.2rem;
+    color: var(--text-color);
+}
+
+.contact-section h2 span{
+    color: var(--main-color);
+}
+
+.form{
+    /* background-color: white; */
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-section form .inputs input,
+.contact-section form textarea{
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    font-size: 1.3rem;
+    border-radius: .8rem;
+    color: var(--text-color);
+    background-color: var(--second-bg-color);
+    border: none;
+}
+
+.contact-section form textarea{
+    padding-left: 0rem;
+    padding-right: 0rem;
+    padding-top: 1.5rem;
+    width: 100%;
+    resize: none;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 7px var(--main-color);
+    font-size: 1.2rem;
+    color: var(--second-bg-color);
+    font-family: 'Poppins',sans-serif;
+    letter-spacing: .1rem;
+    transition: .4s ease;
+}
+
+.btn:hover{
+    box-shadow: none;
+}
