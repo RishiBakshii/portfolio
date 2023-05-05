@@ -1,3 +1,3 @@
-// document.getElementById("contact").addEventListener("click",function(){
-//     alert("you clicked on contact")
-// })
+let menu_icon=document.getElementById('hamburger-menu').addEventListener('click',function() {
+    
+})
