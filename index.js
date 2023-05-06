@@ -1,3 +1,5 @@
-let menu_icon=document.getElementById('hamburger-menu').addEventListener('click',function() {
-    
-})
+let menuIcon=document.querySelector('#hamburger-menu')
+
+menuIcon.onclick= ()=> {
+    menuIcon.classList.toggle('bx-x')
+}
