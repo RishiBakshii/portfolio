@@ -205,19 +205,19 @@
 
             <h2>Contact <span>Me</span></h2>
 
-            <form class='form' action="#contact-section">
+            <form class='form' action="https://formsubmit.co/guitarguyrishi@gmail.com" method="POST">
 
                 <div class="inputs">
-                    <input type="text" placeholder="Full Name">
-                    <input type="email" placeholder="Email Address">
+                    <input name="fullname" required type="text" placeholder="Full Name">
+                    <input name='emailaddress' required type="email" placeholder="Email Address">
                 </div>
 
                 <div class="inputs">
-                    <input type="text" placeholder="Contact">
-                    <input type="text" placeholder="Email Subject">
+                    <input name="contact" required type="text" placeholder="Contact">
+                    <input name="emailsubject" required type="text" placeholder="Email Subject">
                 </div>
                 
-                <textarea placeholder="Your Message" name="" id="" rows="10"></textarea>
+                <textarea name="message" required placeholder="Your Message" name="" id="" rows="10"></textarea>
                 <input class="btn" type="submit" value="Send Message">
 
             </form>
