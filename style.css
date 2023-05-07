@@ -825,7 +825,7 @@ body{
         visibility: collapse;
         opacity: 0;
         visibility: collapse;
-        transition: .4s ease;
+        transition: .4s;
         position: absolute;
         padding-top: 7rem;
         padding-left: 2.5rem;
