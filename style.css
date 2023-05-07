@@ -395,31 +395,28 @@ body{
     grid-template-rows: repeat(3,1fr);
     align-items: center;
     justify-items: center;
-    row-gap: 1.8rem;
+    row-gap: 2rem;
 }
 
 .items{
     width: 39.5vw;
     height: 62vh;
-    /* border-radius: 2rem; */
-    position: relative;
     overflow: hidden;
-    transition: .4s;
-    /* display: flex;
-    justify-content: center;
-    flex-direction: column; */
-    box-shadow: 0 0 1rem 0 var(--main-color);
+    position: relative;
+    transition: .5s;
+    box-shadow: 0 0 1px 1px var(--main-color);
 }
 
 
-
-.items iframe{
+.items img{
     width: 100%;
     height: 100%;
 }
 
 .items:hover{
-    transform: scale(1.0564);
+    transform: translateY(-1%);
+    box-shadow: 0 1.5rem 1rem 4px var(--main-color);
+    cursor: pointer
 }
 
 /* CONTACT SECTION */
@@ -824,15 +821,18 @@ body{
 
 
     .navbar ul{
-        display:none;
+        display: block;
+        visibility: collapse;
+        opacity: 0;
+        visibility: collapse;
+        transition: .4s ease;
         position: absolute;
         padding-top: 7rem;
         padding-left: 2.5rem;
         padding-right: 2.5rem;
         top: 6rem;
+        right: 0;
         z-index: 1;
-        left: 0;
-        bottom: 0;
         background-color: var(--second-bg-color);
         width: fit-content;
         height: 100vh;
@@ -840,11 +840,11 @@ body{
 
     .navbar .nav-items{
         padding: 2rem;
-        /* transition: 6s; */
     }
 
     .navbar ul.change{
-        display: block;
+        opacity: 1;
+        visibility: visible;
     }
 
     .grid-items{

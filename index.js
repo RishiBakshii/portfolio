@@ -1,13 +1,14 @@
 let menuIcon=document.querySelector('#hamburger-menu')
 let navMenu=document.querySelector('#nav-menu')
 
+
+// click listerner on hamburger menu for openning the nav bar
 menuIcon.onclick= ()=> {
     menuIcon.classList.toggle('bx-x')
-
     navMenu.classList.toggle('change')
 }
 
-// scroll detection
+// scroll detection -> for closing the navbar
 window.onscroll = function() {
     // navMenu.style.display='none'
     menuIcon.classList.remove('bx-x')
