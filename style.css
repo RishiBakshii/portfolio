@@ -821,9 +821,9 @@ body{
 
     .navbar ul{
         display: block;
+        /* text-align: center; */
         visibility: collapse;
         opacity: 0;
-        visibility: collapse;
         transition: .4s;
         position: absolute;
         padding-top: 7rem;
@@ -839,11 +839,20 @@ body{
 
     .navbar .nav-items{
         padding: 2rem;
+        /* box-shadow: 0 0 1px 1px var(--main-color);
+        border-radius: .8rem; */
+        margin-top: 1rem;
+        transition: .4s;
+    }
+
+    .navbar .nav-items:hover{
+        transform: translateY(-3%);
     }
 
     .navbar ul.change{
         opacity: 1;
         visibility: visible;
+        right: 0;
     }
 
     .grid-items{
