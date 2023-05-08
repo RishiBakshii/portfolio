@@ -299,20 +299,12 @@ body{
     transform: translateY(2%) scale(1.1);
 }
 
-.button-container button:nth-child(1){
-    background-color:rgba(0, 128, 0, 0.338);
-
-    /* box-shadow: inset 0 0 0 0; */
+.button-container button{
     transition: .4s;
 }
 
-/* .button-container button:nth-child(1):hover{
-    box-shadow: 0 0 7px 2px green;
-} */
-
-.button-container button:nth-child(2){
-    background-color: var(--second-bg-color);
-    transition: .4s;
+.button-container button.green{
+    background-color: rgba(0, 128, 0, 0.302);
 }
 
 
