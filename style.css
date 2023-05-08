@@ -367,7 +367,6 @@ body{
 /* SECTION 4 CERTIFICATES SECTION */
 
 .certificates-section{
-    /* background-color: red; */
     width: 100%;
 }
 .certificate-section-span{
@@ -577,7 +576,7 @@ body{
 @media (max-width:1414px){
     .items{
         width: 47vw;
-        height: 38vw;
+        height: 45vw;
     }
 }
 
@@ -888,7 +887,10 @@ body{
     }
 
 
+
 }
+
+
 
 @media (max-width:800px){
     .certificate-container-grid {
@@ -902,6 +904,8 @@ body{
         }
 
 }
+
+
 
 @media (max-width:718px){
     .grid-items{
@@ -1116,6 +1120,11 @@ body{
     .footer a i{
         font-size: 1.3rem;
     }
+
+    .items {
+            width: 85vw;
+            height: 70vw;
+        }
 }
 
 
