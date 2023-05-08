@@ -392,7 +392,7 @@ body{
 
 .items{
     width: 39.5vw;
-    height: 62vh;
+    height: 65vh;
     overflow: hidden;
     position: relative;
     transition: .5s;
@@ -534,6 +534,7 @@ body{
     .contact-section-span{
         height: 7rem;
     }
+
     
 }
 
@@ -571,6 +572,13 @@ body{
         width: 73%;
     }
     
+}
+
+@media (max-width:1414px){
+    .items{
+        width: 47vw;
+        height: 38vw;
+    }
 }
 
 @media (max-width:1406px) {
@@ -879,6 +887,19 @@ body{
         width: 42%;
     }
 
+
+}
+
+@media (max-width:800px){
+    .certificate-container-grid {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+
+    .items {
+            width: 79vw;
+            height: 76vw;
+        }
 
 }
 
