@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded',function(){
 
     const header=document.getElementById("header")
+    const menuIcon=document.getElementById("hamburger-menu")
+    const navbar=document.getElementById("navbar")
     
 
     setTimeout(() => {
@@ -109,21 +111,6 @@ document.addEventListener('DOMContentLoaded',function(){
         header.style.boxShadow=''
     }, 2130);
 
-
-    // setTimeout(() => {
-    //     header.style.boxShadow='0 0 1rem 1px var(--main-color)'
-    // }, 2200);
-    // setTimeout(() => {
-    //     header.style.boxShadow=''
-    // }, 2400);
-    // setTimeout(() => {
-    //     header.style.boxShadow='0 0 1rem 1px var(--main-color)'
-    // }, 2600);
-    // setTimeout(() => {
-    //     header.style.boxShadow=''
-    // }, 2800);
-
-
     setTimeout(() => {
         header.style.transition='.4s'
         header.style.boxShadow='0 0 100rem 1px var(--main-color)'
@@ -137,15 +124,17 @@ document.addEventListener('DOMContentLoaded',function(){
         if (window.scrollY===0){
             header.style.boxShadow='0 0 4rem 1px var(--main-color)'
         }
+        menuIcon.classList.remove('bx-x')
+        navbar.classList.remove('show')
     }
 
 
 
 
-
-
-
-
+    menuIcon.addEventListener("click",function(){
+        navbar.classList.toggle("show")
+        menuIcon.classList.toggle("bx-x")
+    })
 
 
 
