@@ -5,23 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="stylesheet" href="./static/css/responsive.css">
+    <link rel="stylesheet" href="./static/css/customScrollBar.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>RishiBakshi -DataScientist</title>
 </head>
 <body>
     <div id="splash-screen"><span id="splashText"></span></div>
     <div id="overlay"></div>
-    <header class="header">
-        <nav class="navbar">
-            <p class="namelogo">RishiBakshi</p>
-            <i class='bx bx-menu' id="hamburger-menu"></i>
-            
-            <ul id="nav-menu">
-                <li class="nav-items"><a class="active" href="#">Home</a></li>
-                <li class="nav-items"><a href="#about">About</a></li>
-                <li class="nav-items"><a href="#project-section">Projects</a></li>
-                <li class="nav-items"><a href="#certificates-section" id="contact">Certificates</a></li>
-                <li class="nav-items"><a href="#contact-section" id="contact">Contact</a></li>
+
+    <header class="header" id="header">
+        <p class="namelogo">RishiBakshi</p>
+        <i class='bx bx-menu' id="hamburger-menu"></i>
+        <nav class="nav">
+            <ul id="navbar" class="navbar">
+                <a href="#">
+                    <li class="nav-items">Home</li>
+                </a>
+                <a href="#about">
+                    <li class="nav-items">About</li>
+                </a>
+                <a href="#project-section">
+                    <li class="nav-items">Projects</li>
+                </a>
+                <a href="#certificates-section">
+                    <li class="nav-items">Certificates</li>
+                </a>
+                <a href="#contact-section">
+                    <li class="nav-items">Contact</li>
+                </a>
             </ul>
         </nav>
         <div class="line"></div>
@@ -29,23 +41,22 @@
 
     <main class="main">
 
-
         <!-- section 1 introduction -->
-        <section class="section1">
+        <section class="home-section">
 
             <div class="title">
                 <h2>I'm RishiBakshi</h2>
-                <h3><span>Data Scientist</span> from India</h3>
+                <h3><span id="typewriter-effect">Data Scientist</span> from India</h3>
 
-                <div class="socials">
+                <div class="socials-container">
                     <a target="_blank" href="https://github.com/RishiBakshii"><i class='bx bxl-github' ></i></a>
                     <a target="_blank" href="https://www.linkedin.com/in/rishi-bakshi-75b224271/"><i class='bx bxl-linkedin' ></i></a>
                     <a target="_blank" href="https://instagram.com/rishibakshii?igshid=ZDdkNTZiNTM="><i class='bx bxl-instagram' ></i></a>
                     <a target="_blank" href="https://twitter.com/Rishibakshii"><i class='bx bxl-twitter' ></i></a>
                 </div>
                 <div class="buttons">
-                    <a href="#contact-section"><input type="submit" class='btn' value="Contact Me"></a>
-                    <a href="#about"><input type="submit" class='btn hidden-btn' value="About"></a>
+                    <a href="#contact-section"><input type="submit" class='btn contact-btn' value="Contact Me"></a>
+                    <a href="#about"><input type="submit" class='btn about-btn' value="About"></a>
                 </div>
 
             </div>
@@ -70,19 +81,12 @@
                 <h3>Data Scientist</h3>
                 <p>My name is RishiBakshi and i am a data scientist currently pursuing Bca at IMS Noida 1st year but besides that i am into Data Science since 2+ years. Built many end-to-end ml driven applications, Recommender systems and familiar with the end-to-end flow and lifecycle of a data science project.</p>
                 <p>
-                    The passion i feel for making data driven applications ,extracting hidden insights from data through detailed analysis that solves a buisness problem is exactly what i live for. As being a self learner exploring new topics everyday and the thought of gaining expertise in the field of data science is the reason<br><br><br>
-
-
-                    <!-- As being a self learner the pace of exploring and learning never stops and the thought of gaining expertise in data science is the reason -->
-
+                    The passion i feel for making data driven applications ,extracting hidden insights from data through detailed analysis that solves a buisness problem is exactly what i live for. As being a self learner exploring new topics everyday and the thought of gaining expertise in the field of data science is the reason<br><br>
 
                     In-depth Knowledge of Machine learning algorithms , Data Cleaning, Data Visualization, Feature Engineering, Predictive Modeling and Statistical Analysis.
                     "Currently Exploring More about Deep learning and various neural networks."
                     
                 </p>
-                <!-- <h3>How i got into Data science?</h3>
-                <p>At school times python was introduced to me and the passion i felt for making small applications that solves a purpose driven me to a whole new dimension Offcourse not the 7th. That was the first point in my life where i have researched about something on my own and explored many things that can be done with python language</p>
-                <p>Later on I joined a Course on whitehatjunior where i got introduced to machine learing algorithms</p> -->
             </div>
 
         </section>
@@ -90,7 +94,6 @@
         <!-- section 3 projects -->
         <span id="project-section" class="project-section-span"></span>
         <section class="project-section">
-            <h1>Latest <span>Projects</span></h1>
 
             <div class="project-container-grid">
 
@@ -98,20 +101,36 @@
                 <div class="grid-items">
 
                     <div class="image-container">
+                        <img src="https://github.com/RishiBakshii/Movie-Recommender-System/raw/main/static/Images/ui%20image%202.png?raw=true" alt="Movie Recommender System">  
+                    </div>
+                    
+                    <div class="info-container">
+                        <h4>Movie Recommender System</h4>
+                        <p>Flickfinder -MovieMatch is a movie recommendation webapp where one can choose from a list of 5000 movies and based on selection this will recommend you 5 movies followed by their details and starcast</p>
+                    </div>
+
+                    <div class="button-container">
+                        <a target="_blank"  href="https://github.com/RishiBakshii/Bike-Price-Predictor"><button id="github-btn">Github</button></a>
+                        <a target="_blank"  href="https://bike-price-predictor.onrender.com/"><button id="view-btn">View</button></a>
+                    </div>
+                    
+                </div>
+
+
+                <div class="grid-items">
+
+                    <div class="image-container">
                         <img src="assets/project-Covers/StudentExamPerformancePredictor.png" alt="imdb_logo">
+                    </div>
 
-                            <div class="information-layer">
-                                <h4 style="text-align: center;">Student performance predictor</h4>
-                                <p>Flask Powered web application that follows a formal structure of a data science project with modular programming and pipelines</p>
-                                <a href="#project-section"><i class="bx bx-link-external"></i></a>
-                            </div>
-
+                    <div class="info-container">
+                        <h4>Student performance predictor</h4>
+                        <p>Flask Powered web application that follows a formal structure of a data science project with modular programming and pipelines</p>
                     </div>
                     
-
                     <div class="button-container">
-                        <a target="_blank"  href="https://github.com/RishiBakshii/mlproject"><button class="green">Github</button></a>
-                        <a target="_blank"  href="https://github.com/RishiBakshii/mlproject"><button>View</button></a>
+                        <a target="_blank"  href="https://github.com/RishiBakshii/mlproject"><button id="github-btn">Github</button></a>
+                        <a target="_blank"  href="https://github.com/RishiBakshii/mlproject"><button id="view-btn">View</button></a>
                     </div>
                     
                 </div>
@@ -119,20 +138,17 @@
                 <div class="grid-items">
 
                     <div class="image-container">
-                        <img style="transform: scale(1.05);" src="assets/project-Covers/LAPTOP PRICE PREDICTOR.png" alt="laptop price predictor png">
-
-                            <div class="information-layer">
-                                <h4>Laptop Price Predictor</h4>
-                                <p>A Flask Powered Web Application which predicts the price of a laptop based on different configurations</p>
-                                <a href="#project-section"><i class="bx bx-link-external"></i></a>
-                            </div>
-
+                        <img style="transform: scale(1.04);" src="assets/project-Covers/LAPTOP PRICE PREDICTOR.png" alt="laptop price predictor png">    
                     </div>
                     
+                    <div class="info-container">
+                        <h4>Laptop Price Predictor</h4>
+                        <p>A Flask Powered Web Application which predicts the price of a laptop based on different configurations</p>
+                    </div>
 
                     <div class="button-container">
-                        <a target="_blank"  href="https://github.com/RishiBakshii/Laptop-Price-Predictor"><button class="green">Github</button></a>
-                        <a target="_blank"  href="https://laptop-price-predictor-plkk.onrender.com/"><button>View</button></a>
+                        <a target="_blank"  href="https://github.com/RishiBakshii/Laptop-Price-Predictor"><button id="github-btn">Github</button></a>
+                        <a target="_blank"  href="https://laptop-price-predictor-plkk.onrender.com/"><button id="view-btn">View</button></a>
                     </div>
                     
                 </div>
@@ -141,23 +157,21 @@
                 <div class="grid-items">
 
                     <div class="image-container">
-                        <img style="transform: scale(1.2);" src="assets/project-Covers/Your paragraph text (2).png" alt="laptop price predictor png">
-
-                            <div class="information-layer">
-                                <h4>Bike Price Prediction</h4>
-                                <p>A Flask Web application powered by <b>XGBoost</b> that predicts the prices of Bikes at an <b>accuracy of 93%</b></p>
-                                <a href="#project-section"><i class="bx bx-link-external"></i></a>
-                            </div>
-
+                        <img src="assets/project-Covers/Your paragraph text (2).png" alt="laptop price predictor png">   
                     </div>
                     
+                    <div class="info-container">
+                        <h4>Bike Price Prediction</h4>
+                        <p>A Flask Web application powered by <b>XGBoost</b> that predicts the prices of Bikes at an <b>accuracy of 93%</b></p>
+                    </div>
 
                     <div class="button-container">
-                        <a target="_blank"  href="https://github.com/RishiBakshii/Bike-Price-Predictor"><button class="green">Github</button></a>
-                        <a target="_blank"  href="https://bike-price-predictor.onrender.com/"><button>View</button></a>
+                        <a target="_blank"  href="https://github.com/RishiBakshii/Bike-Price-Predictor"><button id="github-btn">Github</button></a>
+                        <a target="_blank"  href="https://bike-price-predictor.onrender.com/"><button id="view-btn">View</button></a>
                     </div>
                     
                 </div>
+
 
                 
             </div>
@@ -168,7 +182,7 @@
         <span id="certificates-section" class="certificate-section-span"></span>
         <section class="certificates-section">
             
-            <h1>Certifications</h1>
+            <!-- <h1>Certifications</h1> -->
 
             <div class="certificate-container-grid">
 
@@ -200,18 +214,18 @@
 
             <form class='form' action="https://formspree.io/f/xdovbjgl" method="POST">
 
-                <div class="inputs">
+                <div class="inputs-container">
                     <input name="fullname" required type="text" placeholder="Full Name">
                     <input name='emailaddress' required type="email" placeholder="Email Address">
                 </div>
 
-                <div class="inputs">
+                <div class="inputs-container">
                     <input name="contact" required type="text" placeholder="Contact">
                     <input name="emailsubject" required type="text" placeholder="Email Subject">
                 </div>
                 
                 <textarea name="message" required placeholder="Your Message" name="" id="" rows="10"></textarea>
-                <input class="btn" type="submit" value="Send Message">
+                <input class="btn send-msg-btn" type="submit" value="Send Message">
 
             </form>
 
@@ -225,7 +239,7 @@
     <footer class="footer">
 
         <div class="footer-text">
-            <p>Copyright &copy; 2023 by RishiBakshi | All Rights Reserved</p>
+            <p>Copyright &copy; 2023 | All Rights Reserved | Made with heart❤️ By RishiBakshi</p>
         </div>
 
         <div class="footer-iconTop">
@@ -237,4 +251,7 @@
     
 </body>
     <script src="./static/javascript/index.js"></script>
+    <script src="./static/javascript/headerAnimation.js"></script>
+    <!-- <script src="./static/javascript/footerAnimation.js"></script> -->
+    <script src="./static/javascript/responsiveNavbar.js"></script>
 </html>
