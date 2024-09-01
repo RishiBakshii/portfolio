@@ -3,7 +3,7 @@ import { SkillList } from "../components/Skill/SkillList"
 import { ExperienceList } from "../components/experience/ExperienceList"
 import { Intro } from "../components/intro/Intro"
 import { Summary } from "../components/intro/Summary"
-import { Navbar } from "../components/navigation/navbar"
+import { Navbar } from "../components/navigation/Navbar"
 import { Socials } from "../components/social/Socials"
 import { SKILLS } from "../constants/skills"
 
