@@ -15,7 +15,7 @@ export default defineConfig({
         background_color: "#000000",
         display: "standalone",
         scope: "/",
-        start_url: "/",
+        start_url: "/portfolio",
         icons: [
           {
             src: "maskable.png",
