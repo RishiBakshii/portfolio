@@ -14,7 +14,7 @@ export default defineConfig({
         theme_color: "#000000",
         background_color: "#000000",
         display: "standalone",
-        scope: "/",
+        scope: "/portfolio",
         start_url: "/portfolio",
         icons: [
           {

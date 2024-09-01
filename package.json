@@ -11,7 +11,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
-  "homepage": "https://rishibakshii.github.io/dev-portfolio",
+  "homepage": "https://rishibakshii.github.io/portfolio",
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
