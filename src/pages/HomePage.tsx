@@ -3,6 +3,7 @@ import { SkillList } from "../components/Skill/SkillList"
 import { ExperienceList } from "../components/experience/ExperienceList"
 import { Intro } from "../components/intro/Intro"
 import { Summary } from "../components/intro/Summary"
+import { Navbar } from "../components/navigation/navbar"
 import { Socials } from "../components/social/Socials"
 import { SKILLS } from "../constants/skills"
 
@@ -23,7 +24,12 @@ export const HomePage = () => {
                 <div className="hidden max-lg:block">
                     <Socials/>
                 </div>
+
+                <div className="mt-16 max-lg:hidden">
+                  <Navbar/>
+                </div>
             </div>
+
 
             <div className="absolute bottom-60 max-lg:hidden">
               <div className="fixed max-lg:relative">
@@ -33,10 +39,10 @@ export const HomePage = () => {
         </div>
 
         {/* sections */}
-        <div className="w-[40rem] max-xl:w-fit  text-text-secondary flex flex-col gap-y-20">
+        <div className="w-[40rem] max-xl:w-fit text-text-secondary flex flex-col gap-y-20">
 
           {/* about section */}
-          <section className="gap-y-6 flex flex-col">
+          <section id="about" className="gap-y-6 flex flex-col scroll-m-24">
             <h4 className="max-lg:block hidden text-text-primary font-bold uppercase tracking-wide">About</h4>
             <div className="gap-y-6 flex flex-col pl-6 max-sm:pl-0">
               <Summary summary={<p>When I was introduced to Python in class 12, I knew technology was my calling. My journey began with a course in AI and ML from WhiteHat Jr., where I delved into <strong>data science and neural networks</strong>, and soon discovered my passion for <strong>full-stack development.</strong> Since then, I've focused on <strong>building scalable, secure web applications</strong> and have hands-on experience in creating <strong>end-to-end encrypted chat services.</strong></p>}/>
@@ -45,13 +51,13 @@ export const HomePage = () => {
           </section>
 
           {/* experience section */}
-          <section className="flex flex-col gap-y-6">
+          <section id="experience" className="flex flex-col gap-y-6 scroll-m-12">
             <h4 className="max-lg:block hidden text-text-primary font-bold uppercase tracking-wide">Experience</h4>
             <ExperienceList/>
           </section>
 
           {/* project section */}
-          <section className="gap-y-6 flex flex-col pb-24 max-md:pb-12">
+          <section id="projects" className="gap-y-6 flex flex-col pb-24 max-md:pb-12 scroll-m-12">
             <h4 className="max-lg:block hidden text-text-primary font-bold uppercase tracking-wide">Projects</h4>
             <ProjectList/>
           </section>

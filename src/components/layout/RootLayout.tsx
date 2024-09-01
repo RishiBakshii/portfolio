@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom"
 export const RootLayout = () => {
   return (
     <>
-    <main className="w-screen h-screen bg-background overflow-x-hidden">
+    <main className="w-screen h-screen bg-background overflow-x-hidden scroll-smooth">
         <Outlet/>
     </main>
     </>
