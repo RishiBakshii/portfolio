@@ -19,7 +19,7 @@ export const Socials = () => {
           <Twitter size={35}/>
         </a>
 
-        <a target="_blank" href="https://rishibakshi.hashnode.dev">
+        <a target="_blank" href="https://hashnode.com/@RishiBakshi">
           <HashNodeIcon size={35}/>
         </a>
 
