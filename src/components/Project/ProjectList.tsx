@@ -8,7 +8,7 @@ export const ProjectList = () => {
             desc={<p>Baatchit is a secure, real-time messaging app with <strong>end-to-end encryption, private key recovery</strong>, and <strong>push notifications</strong>. It offers features like ,<strong>friends, group chats, message editing, reactions, file sharing, and OAuth integration</strong>, all within a Progressive Web App for a seamless, native-like experience.</p>}
             title="End-To-End-Encrypted chat application"
             githubLink="https://github.com/RishiBakshii/mern-chat-end-to-end-encrypted"
-            liveLink="https://baatchit.online/"
+            liveLink="https://mernchat.in/"
             techStack={["Mern","Redux-Toolkit","Rtk-Query","Typescript","Cloudinary","Tailwind","Socket.io","AWS","Firebase-push-notifications","Framer-Motion"]}
         />
         <ProjectCard
